@@ -32,7 +32,7 @@ LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL"))
 # If you need to broadcast messages as a copy or Forwarded Message
 BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", False))
 # Thumbnail URL
-THUMB_URL = os.environ.get("THUMB_URL", "https://telegra.ph/file/2ed47c81eda6b0624021d.jpg")
+THUMB_URL = os.environ.get("THUMB_URL", "https://github.com/Nikitaroy31/Callsmusic-Plus/blob/e345415d00fbfcfdeaf7c3b6251dde5cb10c2bf7/cache/NexaUB.jpg")
 # Your Updates Channel! Don't Put Anything If you don't have one
 UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "nikitabots")
 

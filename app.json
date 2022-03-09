@@ -71,7 +71,7 @@
     "THUMB_URL": {
       "description": "Thumbnail Url To Use in play, search commands. Add this only if you need a custom one instead of default thumbnail",
       "required": false,
-      "value": "https://telegra.ph/file/2ed47c81eda6b0624021d.jpg"
+      "value": "https://github.com/Nikitaroy31/Callsmusic-Plus/blob/e345415d00fbfcfdeaf7c3b6251dde5cb10c2bf7/cache/NexaUB.jpg"
     },
     "UPDATES_CHANNEL": {
       "description": "Your Telegram Channel's Username without '@' . Not Needed by Default!",
