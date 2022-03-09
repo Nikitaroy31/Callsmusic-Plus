@@ -22,13 +22,13 @@ async def _(bot: Client, cmd: Message):
 
 # Back Button
 BACK_BUTTON = InlineKeyboardMarkup([[InlineKeyboardButton("⬅️ Go Back ⬅️", callback_data="cbback")]])
-
+'''
 @Client.on_message(~filters.private)
 async def delcmd(_, message: Message):
     if await delcmd_is_on(message.chat.id) and message.text.startswith("/") or message.text.startswith("!"):
         await message.delete()
     await message.continue_propagation()
-
+'''
 
 @Client.on_message(filters.command(["reload", f"reload@{BOT_USERNAME}"]))
 @authorized_users_only # Fuk Off Everyone! Admin Only Command!

@@ -20,7 +20,7 @@ DURATION_LIMIT = int(getenv("DURATION_LIMIT", "7"))
 COMMAND_PREFIXES = list(getenv("COMMAND_PREFIXES", "/ !").split())
 
 # Your Telegram User ID
-BOT_OWNER = int(os.environ.get("BOT_OWNER"))
+BOT_OWNER = list(map(int, getenv("BOT_OWNER")))
 # Sudo users IDs, They are admins everywhere
 SUDO_USERS = list(map(int, getenv("SUDO_USERS").split()))
 # Your Bot's Username without "@"
@@ -34,17 +34,17 @@ BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", False))
 # Thumbnail URL
 THUMB_URL = os.environ.get("THUMB_URL", "https://telegra.ph/file/2ed47c81eda6b0624021d.jpg")
 # Your Updates Channel! Don't Put Anything If you don't have one
-UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "NexaBotsUpdates")
+UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "nikitabots")
 
 # Your ARQ API Key
 ARQ_API_KEY = getenv("ARQ_API_KEY")
 # Don't Change Anything Here
-ARQ_API_URL = "https://grambuilders.tech/"
+ARQ_API_URL = "http://thearq.tech/"
 
 # Updator Configs
 HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
 HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
-UPSTREAM_REPO = os.environ.get("UPSTREAM_REPO", "https://github.com/Itz-fork/Callsmusic-Plus")
+UPSTREAM_REPO = os.environ.get("UPSTREAM_REPO", "https://github.com/Nikitaroy31/Callsmusic-Plus")
 U_BRANCH = "master"
 HEROKU_URL = fetch_heroku_git_url(HEROKU_API_KEY, HEROKU_APP_NAME)
 
